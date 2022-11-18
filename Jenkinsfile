@@ -17,29 +17,13 @@ pipeline {
     }  
     
     stage ('DEPLOY') {
-      steps {  
-      
-       stage ('server1') {
-            steps {
-                    echo "This is Deploy stage" 
-                    sh 'sleep 5'
-            }
-       }
-       stage ('server2') {
-            steps {
-                    echo "This is Deploy stage" 
-                    sh 'sleep 5'
-            }
-       }
-       stage ('server3') {
-            steps {
-                    echo "This is Deploy stage" 
-                    sh 'sleep 5'
-            }
-       }
-      }    
-    } 
-  } 
+        steps {
+             echo "This is Deploy stage" 
+             sh 'sleep 5'
+        }
+   }
+        
+  }
 
 }
   
