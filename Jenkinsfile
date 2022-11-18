@@ -1,5 +1,5 @@
 pipeline {
-  agent any;
+    agent any;
   stages {
 
     stage ('BUILD') {
@@ -17,24 +17,25 @@ pipeline {
     }  
     
     stage ('DEPLOY') {
-      stage ('server1') {
-          steps {
-             echo "This is Deploy stage" 
-             sh 'sleep 5'
-          }
-      }
-      stage ('server2') {
-          steps {
-             echo "This is Deploy stage" 
-             sh 'sleep 5'
-          }
-      }
-      stage ('server3') {
-          steps {
-             echo "This is Deploy stage" 
-             sh 'sleep 5'
-          }
-      }
+      
+       stage ('server1') {
+            steps {
+                    echo "This is Deploy stage" 
+                    sh 'sleep 5'
+            }
+       }
+       stage ('server2') {
+            steps {
+                    echo "This is Deploy stage" 
+                    sh 'sleep 5'
+            }
+       }
+       stage ('server3') {
+            steps {
+                    echo "This is Deploy stage" 
+                    sh 'sleep 5'
+            }
+       }
     }  
   } 
 
