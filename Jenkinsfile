@@ -17,6 +17,7 @@ pipeline {
     }  
     
     stage ('DEPLOY') {
+      steps {  
       
        stage ('server1') {
             steps {
@@ -36,7 +37,8 @@ pipeline {
                     sh 'sleep 5'
             }
        }
-    }  
+      }    
+    } 
   } 
 
 }
