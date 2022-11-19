@@ -5,6 +5,9 @@ pipeline {
     stage ('BUILD') {
       steps {
         echo "This is Build stage" 
+        sh ''' echo $BUILD_NUMBER
+               echo $BUILD_ID  
+           '''
      
       }  
     }  
