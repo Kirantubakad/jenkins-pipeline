@@ -5,7 +5,7 @@ pipeline {
     stage ('BUILD') {
       steps {
         echo "This is Build stage" 
-        
+        echo $BUILD_NUMBER
       }  
     }  
     
